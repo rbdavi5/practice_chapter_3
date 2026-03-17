@@ -1,0 +1,25 @@
+name: esic-notebooks
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python>=3.12,<3.14
+  - numpy>=2.3.5
+  - pandas>=2.3.3
+  - scipy>=1.16.3
+  - scikit-learn>=1.8.0
+  - matplotlib>=3.10.0
+  - seaborn>=0.13.2
+  - lightgbm>=4.6.0
+  - ipykernel>=7.2.0
+  - ipywidgets>=8.1.8
+  - joblib>=1.5.3
+  - setuptools<70
+
+  # pip-only or safer via pip
+  - pip
+  - pip:
+      - category-encoders>=2.9.0
+      - shap>=0.51.0
+      - ydata-profiling>=4.18.1
